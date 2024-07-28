@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Placement Prediction</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin-top: 50px;
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+        }
+        .form-control {
+            background: rgba(255, 255, 255, 0.1);
+            border: none;
+            color: #fff;
+        }
+        .form-control:focus {
+            background: rgba(255, 255, 255, 0.2);
+        }
+        .btn-primary {
+            background-color: #ff416c;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #ff4b2b;
+        }
+        h1 {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mt-5">Campus Placement Prediction</h1>
+        <form action="/predict" method="post">
+            <div class="form-group">
+                <label for="CGPA">CGPA:</label>
+                <input type="text" class="form-control" name="CGPA" required>
+            </div>
+            <div class="form-group">
+                <label for="Internship">Internship:</label>
+                <input type="text" class="form-control" name="Internship" required>
+            </div>
+            <div class="form-group">
+                <label for="Projects">Projects:</label>
+                <input type="text" class="form-control" name="Projects" required>
+            </div>
+            <div class="form-group">
+                <label for="SoftSkillsRating">Soft Skills Rating:</label>
+                <input type="text" class="form-control" name="SoftSkillsRating" required>
+            </div>
+            <div class="form-group">
+                <label for="Workshop/Certification">Workshop/Certification:</label>
+                <input type="text" class="form-control" name="Workshop/Certification" required>
+            </div>
+            <div class="form-group">
+                <label for="AptitudeTestScore">Aptitude Test Score:</label>
+                <input type="text" class="form-control" name="AptitudeTestScore" required>
+            </div>
+            <div class="form-group">
+                <label for="ExtracurricularActivities">Extracurricular Activities (1 for Yes, 0 for No):</label>
+                <input type="text" class="form-control" name="ExtracurricularActivities" required>
+            </div>
+            <div class="form-group">
+                <label for="PlacementTraining">Placement Training (1 for Yes, 0 for No):</label>
+                <input type="text" class="form-control" name="PlacementTraining" required>
+            </div>
+            <div class="form-group">
+                <label for="SSCMarks">SSC Marks:</label>
+                <input type="text" class="form-control" name="SSCMarks" required>
+            </div>
+            <div class="form-group">
+                <label for="HSCMarks">HSC Marks:</label>
+                <input type="text" class="form-control" name="HSCMarks" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Predict</button>
+        </form>
+    </div>
+</body>
+</html>

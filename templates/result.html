@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin-top: 50px;
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+        }
+        .btn-secondary {
+            background-color: #ff416c;
+            border: none;
+        }
+        .btn-secondary:hover {
+            background-color: #ff4b2b;
+        }
+        h1 {
+            font-weight: bold;
+        }
+        p {
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mt-5">Prediction Result</h1>
+        <p class="text-center">{{ prediction_text }}</p>
+        <div class="text-center">
+            <a href="/" class="btn btn-secondary">Go back</a>
+        </div>
+    </div>
+</body>
+</html>
